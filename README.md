@@ -1,6 +1,6 @@
 # Amaro project
 
-- Final backend project for certification as Web Full Stack Dev by Labenu Bootcamp.
+Final backend project for certification as Web Full Stack Dev by Labenu Bootcamp.
 - Based on a real selection case:
 - [Case Amaro](https://github.com/amaroteam/back-end-challenge)
 
