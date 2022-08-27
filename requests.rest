@@ -1,0 +1,48 @@
+### Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Test",
+    "email": "test@email.com",
+    "password": "abc123"
+}
+
+
+### Login
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "admin@test.com",
+    "password": "asdfg123"
+}
+
+
+### Get Products
+GET http://localhost:3003/products?search=je
+
+
+### Products by tag
+GET http://localhost:3003/products/tag?search=balada
+
+
+### Create product
+POST http://localhost:3003/products
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MTU0MDU4NSwiZXhwIjoxNjYxNjI2OTg1fQ.wlqxDxpmUGG4wImxqPKtdruvfKEjb2Yk63ffd2VJbSk
+
+{
+    "name": "jeans pants"
+}
+
+
+### Endpoint add tag
+POST http://localhost:3003/products/tag/8301
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEwMSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY2MTU0MDU4NSwiZXhwIjoxNjYxNjI2OTg1fQ.wlqxDxpmUGG4wImxqPKtdruvfKEjb2Yk63ffd2VJbSk
+Content-Type: application/json
+
+{
+    "tagName": "delicado"
+}
+
